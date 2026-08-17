@@ -1,0 +1,719 @@
+  /* ========= RESPONSIVE.CSS
+==================================*/
+
+/* ========= Large Screens ========= */
+
+@media (max-width:1400px){
+
+.hero h1{
+font-size:58px;
+}
+
+.about h2,
+.choose h2,
+.services h2,
+.solutions h2,
+.contact h2{
+font-size:38px;
+}
+
+}
+
+/* ========= Laptop ========= */
+
+@media (max-width:1200px){
+
+.section-padding{
+padding:80px 0;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.service-card,
+.feature-box,
+.solution-box{
+
+padding:30px;
+
+}
+
+}
+
+/* ========= Tablet ========= */
+
+@media (max-width:992px){
+
+.navbar{
+
+padding:15px 0;
+
+background:#08111f;
+
+}
+
+.navbar-collapse{
+
+background:#08111f;
+
+padding:20px;
+
+margin-top:15px;
+
+border-radius:15px;
+
+}
+
+.navbar-nav{
+
+text-align:center;
+
+}
+
+.nav-link{
+
+margin:12px 0;
+
+}
+
+.btn.ms-3{
+
+margin-top:15px !important;
+
+margin-left:0 !important;
+
+display:block;
+
+}
+
+.hero{
+
+height:auto;
+
+padding:150px 0 100px;
+
+}
+
+.hero .row{
+
+min-height:auto;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.about img,
+.choose img{
+
+margin-bottom:40px;
+
+}
+
+.about h2,
+.choose h2,
+.services h2,
+.solutions h2,
+.contact h2{
+
+font-size:34px;
+
+}
+
+.service-card{
+
+margin-bottom:20px;
+
+}
+
+.solution-box{
+
+margin-bottom:20px;
+
+}
+
+.contact iframe{
+
+margin-top:40px;
+
+height:350px;
+
+}
+
+.footer{
+
+text-align:center;
+
+}
+
+.footer .col-lg-4{
+
+margin-bottom:35px;
+
+}
+
+}
+
+/* ========= Mobile ========= */
+
+@media (max-width:768px){
+
+.section-padding{
+
+padding:70px 0;
+
+}
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h5{
+
+font-size:15px;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+line-height:1.2;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.hero-buttons .btn{
+
+width:220px;
+
+}
+
+.about h2,
+.choose h2,
+.services h2,
+.solutions h2,
+.contact h2{
+
+font-size:30px;
+
+}
+
+.service-card{
+
+padding:30px 25px;
+
+}
+
+.service-card i{
+
+font-size:48px;
+
+}
+
+.solution-box{
+
+padding:30px;
+
+}
+
+.feature-box{
+
+padding:25px;
+
+}
+
+.contact form{
+
+padding:25px;
+
+}
+
+.contact iframe{
+
+height:300px;
+
+}
+
+#topBtn{
+
+width:50px;
+
+height:50px;
+
+right:20px;
+
+bottom:20px;
+
+}
+
+}
+
+/* ========= Small Mobile ========= */
+
+@media (max-width:576px){
+
+.navbar-brand{
+
+font-size:22px;
+
+}
+
+.navbar-brand img{
+
+width:45px;
+
+}
+
+.hero{
+
+padding-top:120px;
+
+}
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:14px;
+
+}
+
+.section-subtitle{
+
+font-size:13px;
+
+letter-spacing:1px;
+
+}
+
+.about h2,
+.choose h2,
+.services h2,
+.solutions h2,
+.contact h2{
+
+font-size:26px;
+
+}
+
+.service-card{
+
+padding:25px;
+
+}
+
+.solution-box{
+
+padding:25px;
+
+}
+
+.choose-item{
+
+padding:15px;
+
+}
+
+.choose-item span{
+
+font-size:14px;
+
+}
+
+.contact form{
+
+padding:20px;
+
+}
+
+.footer{
+
+padding:60px 0 20px;
+
+}
+
+.footer h3{
+
+font-size:26px;
+
+}
+
+.footer h4{
+
+font-size:20px;
+
+}
+
+}
+
+/* ========= Extra Small ========= */
+
+@media (max-width:400px){
+
+.hero h1{
+
+font-size:26px;
+
+}
+
+.hero p{
+
+font-size:13px;
+
+}
+
+.hero-buttons .btn{
+
+width:100%;
+
+}
+
+.service-card h4{
+
+font-size:20px;
+
+}
+
+.solution-box h5{
+
+font-size:18px;
+
+}
+
+.feature-box{
+
+padding:20px;
+
+}
+
+.contact iframe{
+
+height:250px;
+
+}
+
+}
+
+
+
+
+
+
+
+/* ===================================
+        LARGE DEVICES
+=================================== */
+
+@media (max-width:1200px){
+
+.container{
+    width:92%;
+}
+
+.about-company .container,
+.services-about .container{
+    gap:50px;
+}
+
+.services-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* ===================================
+        TABLETS
+=================================== */
+
+@media (max-width:992px){
+
+section{
+    padding:80px 0;
+}
+
+.about-company .container,
+.services-about .container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.about-image{
+    order:1;
+}
+
+.about-text,
+.about-content{
+    order:2;
+}
+
+.about-image img{
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+.services-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.about-hero,
+.services-hero{
+
+    height:55vh;
+
+}
+
+.about-hero h1,
+.services-hero h1{
+
+    font-size:48px;
+
+}
+
+.section-title h2{
+
+    font-size:38px;
+
+}
+
+}
+
+
+/* ===================================
+        MOBILE
+=================================== */
+
+@media (max-width:768px){
+
+section{
+
+    padding:70px 0;
+
+}
+
+.container{
+
+    width:92%;
+
+}
+
+.about-hero,
+.services-hero{
+
+    height:50vh;
+
+    padding:0 20px;
+
+}
+
+.about-hero h1,
+.services-hero h1{
+
+    font-size:36px;
+
+}
+
+.about-hero p,
+.services-hero p{
+
+    font-size:16px;
+
+}
+
+.about-text h2,
+.about-content h2{
+
+    font-size:32px;
+
+}
+
+.services-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.service-card{
+
+    padding:35px 28px;
+
+}
+
+.cta h2{
+
+    font-size:34px;
+
+}
+
+footer{
+
+    text-align:center;
+
+}
+
+}
+
+
+/* ===================================
+        SMALL MOBILE
+=================================== */
+
+@media (max-width:576px){
+
+.about-hero h1,
+.services-hero h1{
+
+    font-size:30px;
+
+}
+
+.about-hero p,
+.services-hero p{
+
+    font-size:15px;
+
+}
+
+.section-title h2{
+
+    font-size:28px;
+
+}
+
+.about-text h2,
+.about-content h2{
+
+    font-size:28px;
+
+}
+
+.btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.service-card{
+
+    padding:30px 22px;
+
+}
+
+.service-card .icon{
+
+    width:70px;
+
+    height:70px;
+
+}
+
+.service-card .icon i{
+
+    font-size:28px;
+
+}
+
+.cta{
+
+    padding:70px 20px;
+
+}
+
+.cta h2{
+
+    font-size:28px;
+
+}
+
+footer h3{
+
+    font-size:24px;
+
+}
+
+}
+
+
+/* ===================================
+        EXTRA SMALL
+=================================== */
+
+@media (max-width:400px){
+
+.about-hero h1,
+.services-hero h1{
+
+    font-size:26px;
+
+}
+
+.about-text h2,
+.about-content h2{
+
+    font-size:24px;
+
+}
+
+.section-title h2{
+
+    font-size:24px;
+
+}
+
+.btn{
+
+    font-size:15px;
+
+}
+
+}
