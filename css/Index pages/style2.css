@@ -9,160 +9,6 @@
     padding:0;
     box-sizing:border-box;
 }
-/* ================= PAGE HEADER ================= */
-
-.page-header {
-    padding: 100px 0;
-    background: #111;
-    color: #f5f0e6;
-}
-
-.page-header h1 {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-.page-header p {
-    color: #ccc;
-    font-size: 18px;
-}
-
-
-/* ================= WHY CHOOSE US ================= */
-
-.choose {
-    background: #f5f0e6;
-    color: #111;
-}
-
-.section-padding {
-    padding: 100px 0;
-}
-
-.section-subtitle {
-    color: #8b7355;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-
-.choose h2 {
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.choose-description {
-    color: #555;
-    font-size: 17px;
-    line-height: 1.8;
-    margin-bottom: 30px;
-}
-
-
-/* ================= CHOOSE ITEMS ================= */
-
-.choose-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-    padding: 15px 0;
-
-    font-size: 17px;
-    font-weight: 600;
-
-    border-bottom: 1px solid #ddd;
-}
-
-.choose-item i {
-    color: #8b7355;
-    font-size: 22px;
-}
-
-.choose-item span {
-    color: #222;
-}
-
-
-/* ================= IMAGE ================= */
-
-.choose-image {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-.choose-image img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-
-    transition: transform 0.5s ease;
-}
-
-.choose-image:hover img {
-    transform: scale(1.05);
-}
-
-
-/* ================= BUTTON ================= */
-
-.choose .btn {
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-weight: 600;
-}
-
-
-/* ================= RESPONSIVE ================= */
-
-@media (max-width: 991px) {
-
-    .page-header {
-        padding: 70px 0;
-    }
-
-    .page-header h1 {
-        font-size: 38px;
-    }
-
-    .choose {
-        text-align: center;
-    }
-
-    .choose-item {
-        justify-content: center;
-        text-align: left;
-    }
-
-    .choose-image img {
-        height: 400px;
-    }
-
-}
-
-
-@media (max-width: 576px) {
-
-    .section-padding {
-        padding: 70px 20px;
-    }
-
-    .choose h2 {
-        font-size: 32px;
-    }
-
-    .page-header h1 {
-        font-size: 32px;
-    }
-
-    .choose-image img {
-        height: 300px;
-    }
-
-}
 
 html{
     scroll-behavior:smooth;
@@ -738,4 +584,214 @@ transform:translateY(0px);
 .social-icons a:hover{
     transform:translateY(-5px);
     background:#2563eb;
+}
+/* ===============================
+   MISSION & VISION SECTION
+================================== */
+
+.mission-vision{
+    padding:80px 20px;
+    background:#f8f9fc;
+}
+
+.mission-vision .container{
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(450px,1fr));
+    gap:30px;
+}
+
+.mv-card{
+    display:flex;
+    align-items:flex-start;
+    gap:25px;
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+    border-top:4px solid #0d6efd;
+}
+
+.mv-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(13,110,253,0.18);
+}
+
+.mv-icon{
+    width:90px;
+    height:90px;
+    min-width:90px;
+    border-radius:50%;
+    background:#eef4ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:38px;
+    color:#0d6efd;
+}
+
+.mv-content h2{
+    font-size:30px;
+    color:#1b1b1b;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.mv-content p{
+    font-size:17px;
+    line-height:1.8;
+    color:#666;
+    margin:0;
+}
+
+/* ===============================
+   RESPONSIVE
+================================== */
+
+@media(max-width:768px){
+
+    .mission-vision{
+        padding:60px 15px;
+    }
+
+    .mission-vision .container{
+        grid-template-columns:1fr;
+    }
+
+    .mv-card{
+        flex-direction:column;
+        text-align:center;
+        padding:25px;
+    }
+
+    .mv-icon{
+        margin:0 auto;
+    }
+
+    .mv-content h2{
+        font-size:26px;
+    }
+
+    .mv-content p{
+        font-size:16px;
+    }
+}
+.core-values{
+    width:100%;
+    padding:60px 15px;
+    background:#f5f7fa;
+}
+
+.values-box{
+    max-width:900px;
+    margin:0 auto;
+    background:#fff;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.values-box h2{
+    text-align:center;
+    color:#003c8f;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+.value-item{
+    display:flex;
+    align-items:flex-start;
+    margin-bottom:25px;
+}
+
+.dot{
+    width:12px;
+    height:12px;
+    background:#003cff;
+    border-radius:50%;
+    margin-top:8px;
+    margin-right:18px;
+    flex-shrink:0;
+}
+
+.value-item p{
+    margin:0;
+    color:#555;
+    font-size:18px;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+.values-box{
+    padding:20px;
+}
+
+.values-box h2{
+    font-size:26px;
+}
+
+.value-item p{
+    font-size:16px;
+}
+
+.dot{
+    width:10px;
+    height:10px;
+}
+}
+/* ===========================
+   OUR PHILOSOPHY SECTION
+=========================== */
+
+.section-title{
+    padding:80px 20px;
+    background:#ffffff;
+}
+
+.section-title .container{
+    max-width:1100px;
+    margin:auto;
+    text-align:center;
+    background:rgba(255,255,255,0.75);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    border:1px solid rgba(0,102,204,0.15);
+    border-radius:20px;
+    padding:50px 40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.4s ease;
+}
+
+.section-title .container:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,102,204,0.15);
+}
+
+.section-title h2{
+    font-size:40px;
+    color:#0b3d91;
+    font-weight:700;
+    margin-bottom:25px;
+    position:relative;
+}
+
+.section-title h2::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#007bff;
+    display:block;
+    margin:15px auto 0;
+    border-radius:10px;
+}
+
+.section-title p{
+    font-size:17px;
+    line-height:1.9;
+    color:#555;
+    max-width:900px;
+    margin:auto;
 }
